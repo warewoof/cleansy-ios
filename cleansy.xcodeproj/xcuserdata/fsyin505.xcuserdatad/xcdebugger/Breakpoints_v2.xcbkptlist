@@ -490,11 +490,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "cleansy/CleaningViewController.m"
-            timestampString = "434948762.034648"
+            timestampString = "464739158.838475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "306"
-            endingLineNumber = "306"
+            startingLineNumber = "307"
+            endingLineNumber = "307"
             landmarkName = "-getQuoteFromServer"
             landmarkType = "5">
          </BreakpointContent>

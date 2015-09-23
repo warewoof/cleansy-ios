@@ -143,7 +143,7 @@
     switch (selectedRow) {
         case 0:
         {
-            [mdvc setWebAddress:@"https://homejoy.zendesk.com/hc/en-us"];
+            [mdvc setWebAddress:@"https://www.zendesk.com"];
             ((AppDelegate *)[[UIApplication sharedApplication] delegate]).currentModalView = mdvc;
             UINavigationController *navViewHolder = [[UINavigationController alloc] initWithRootViewController:mdvc];
             [self presentViewController:navViewHolder animated:YES completion:nil];
@@ -176,7 +176,7 @@
         }
         case 3:
         {
-            [mdvc setWebAddress:@"http://www.handybook.com/about"];
+            [mdvc setWebAddress:@"http://www.zendesk.com/about"];
             ((AppDelegate *)[[UIApplication sharedApplication] delegate]).currentModalView = mdvc;
             UINavigationController *navViewHolder = [[UINavigationController alloc] initWithRootViewController:mdvc];
             [self presentViewController:navViewHolder animated:YES completion:nil];

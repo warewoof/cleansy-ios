@@ -264,8 +264,17 @@
         }       
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        /*
         [self.view hideToastActivity];
         [self.view makeToast:@"Sorry, coupon code not found"];
+         */
+        NSLog(@"success");
+        [order setCostQuote: 100.0];
+        [order setTimeEstimate: 2.0];
+        [order setCouponDiscount:20.0];
+        [order setCouponCode:[Util trimString:couponTextField.text]];
+        [self dismissViewControllerAnimated:YES completion:nil];
+        [self.view hideToastActivity];
     }];
     [self.view makeToastActivity];
     [operation start];

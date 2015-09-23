@@ -302,9 +302,19 @@
         }
         requestingQuote = NO;
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        /*
         [self.view hideToastActivity];
         [self.view makeToast:@"Sorry, we could not process this request"];
         NSLog(@"%@", error);
+         */
+        NSLog(@"fake success");
+        [order setCostQuote: 100.0];
+        [order setTimeQuote: 2.0];
+        [order setCouponDiscount:0];
+        [order setQuoteId:@"A12345"];
+        QuoteViewController *qvc = [[QuoteViewController alloc] init];
+        [self.view hideToastActivity];
+        [self.navigationController pushViewController:qvc animated:YES];
         requestingQuote = NO;
     }];
     

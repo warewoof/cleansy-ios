@@ -321,8 +321,17 @@
         }
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+        /*
         [self.view hideToastActivity];
         [self.view makeToast:@"Sorry, we could not find this zip code"];
+         (*/
+        NSLog(@"fake success");
+        order.addressCity = @"Los Angeles";
+        order.addressState = @"CA";
+        order.addressCountry = @"USA";
+        [order saveData];
+        [self.view hideToastActivity];
+        [self dismissViewControllerAnimated:YES completion:nil];
     }];
     
     [self.view makeToastActivity];
