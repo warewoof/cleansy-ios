@@ -13,5 +13,6 @@ Notes:
 ![](/screenshots/address.png)
 ![](/screenshots/order.png)
 ![](/screenshots/quote.png)
+![](/screenshots/coupon.png)
 ![](/screenshots/payment.png)
 ![](/screenshots/receipt.png)
